@@ -49,20 +49,12 @@ function Home() {
         </div>
 
         <div className="search-options">
-          <ul>
-            <li>All</li>
-            <li>Videos</li>
-            <li>News</li>
-            <li>Images</li>
-            <li>More</li>
-          </ul>
         </div>
       </div>
 
       <div className="search__results">
         {searchResults.map((result, index) => (
           <div key={index} className="search-result">
-            <h2>Search Result Title</h2>
             <p className="description">{result}</p>
           </div>
         ))}

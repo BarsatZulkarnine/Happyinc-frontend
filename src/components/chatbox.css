@@ -3,88 +3,91 @@
 
 
 .chatbox {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-  }
-  
-  /* Chatbot Content */
-  .chatbox-content {
-    display: none;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    padding: 20px;
-    width: 300px;
-    position: absolute;
-    bottom: 50px;
-    right: 0;
-    height: 300px; /* Fixed height for the chatbox content */
-    overflow-y: auto; /* Enable vertical scrolling */
-  }
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
 
-  
-  /* Chatbot Open State */
-  .chatbox--open .chatbox-content {
-    display: block;
-  }
-  
-  /* Chatbot Button Style */
-  .chatbox button {
-    background: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-  
-  .chatbox button:hover {
-    background: #0056b3;
-  }
-  
-  /* Input and Search Button */
-  .chatbox input {
-    width: 80%;
-    padding: 5px;
-    margin-right: 10px;
-  }
-  
-  .chatbox button.search-button {
-    background: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    cursor: pointer;
-  }
-  
-  .chatbox button.search-button:hover {
-    background: #0056b3;
-  }
-  
-  .user-input{
-    display: flex;
-  }
+/* Chatbot Content */
+.chatbox-content {
+  display: none;
+  background: #b7b7b7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px;
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  height: 300px; /* Fixed height for the chatbox content */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
 
-  /* User question style */
+
+/* Chatbot Open State */
+.chatbox--open .chatbox-content {
+  display: block;
+}
+
+/* Chatbot Button Style */
+.chatbox button {
+  background: #6c1786;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+.chatbox button:hover {
+  background: #3e0d4d;
+}
+
+/* Input and Search Button */
+.chatbox input {
+  color: rgb(25, 25, 25);
+  width: 80%;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.chatbox button.search-button {
+  background: #6c1786;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.chatbox button.search-button:hover {
+  background: #6c1786;
+}
+
+.user-input{
+  display: flex;
+}
+
+/* User question style */
 .message.user {
-    background-color: #4CAF50; /* Green background for user questions */
-    color: white; /* Text color for user questions */
-    border-radius: 10px; /* Rounded corners for user questions */
-    margin: 10px 0;
-    padding: 10px;
-    text-align: right; /* Right-align user questions */
-  }
-  
-  /* Bot response style */
-  .message.chatbot {
-    background-color: #0073e6; /* Blue background for bot responses */
-    color: white; /* Text color for bot responses */
-    border-radius: 10px; /* Rounded corners for bot responses */
-    margin: 10px 0;
-    padding: 10px;
-    text-align: left; /* Left-align bot responses */
-  }
-  
+  background-color: #6c1786; /* Green background for user questions */
+  color: white; /* Text color for user questions */
+  border-radius: 20px; /* Rounded corners for user questions */
+  margin: 10px 0;
+  padding: 10px;
+  text-align: right; /* Right-align user questions */
+  font-size: 12px;
+}
+
+/* Bot response style */
+.message.chatbot {
+  background-color: #505293; /* Blue background for bot responses */
+  color: white; /* Text color for bot responses */
+  border-radius: 20px; /* Rounded corners for bot responses */
+  margin: 10px 0;
+  padding: 10px;
+  text-align: left; /* Left-align bot responses */
+  font-size: 12px;
+}

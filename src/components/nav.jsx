@@ -12,7 +12,7 @@ function Nav() {
               className="nav__logo--img"
               alt="HappyInc Logo"
             />
-            <h1 className="nav__logo--text">Happy Inc</h1>
+            <h1 className="nav__logo--text">HappyInc.</h1>
           </div>
           <div className="nav__links--primary">
             <div className="nav__link">

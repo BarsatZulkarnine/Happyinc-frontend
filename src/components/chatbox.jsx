@@ -13,6 +13,7 @@ function Chatbox() {
       const response = await axios.post('http://localhost:5000/process_data', {
         user_message: searchQuery,
       });
+      console.log(response.data.response);
 
       const userMessage = {
         role: 'user',
