@@ -208,6 +208,7 @@ Dashboard
 
 .dashboard__actions {
     display: flex;
+    justify-content: center;
     gap: 10px; /* Add spacing between buttons */
     align-items: center;
 }
