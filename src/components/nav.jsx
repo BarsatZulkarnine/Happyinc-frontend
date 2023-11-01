@@ -1,5 +1,6 @@
 import React from 'react';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHouse, faMapMarker, faCloud, faEnvelope, faUniversalAccess, faLanguage, faGear } from '@fortawesome/free-solid-svg-icons';
 function Nav() {
   return (
     <div>
@@ -16,25 +17,25 @@ function Nav() {
           <div className="nav__links--primary">
             <div className="nav__link">
               <div className="nav__link--logo">
-                <i className="fas fa-house"></i>
+                <FontAwesomeIcon icon={faHouse} />
               </div>
               <a href="">Home</a>
             </div>
             <div className="nav__link">
               <div className="nav__link--logo">
-                <i className="fas fa-map-marker"></i>
+                <FontAwesomeIcon icon={faMapMarker} />
               </div>
               <a href="">Location</a>
             </div>
             <div className="nav__link">
               <div className="nav__link--logo">
-                <i className="fas fa-cloud"></i>
+                <FontAwesomeIcon icon={faCloud} />
               </div>
               <a href="">Cloud</a>
             </div>
             <div className="nav__link">
               <div className="nav__link--logo">
-                <i className="fas fa-envelope"></i>
+                <FontAwesomeIcon icon={faEnvelope} />
               </div>
               <a href="">Message</a>
             </div>
@@ -43,19 +44,19 @@ function Nav() {
         <div className="nav__links--secondary">
           <div className="nav__link">
             <div className="nav__link--logo">
-              <i className="fas fa-universal-access"></i>
+              <FontAwesomeIcon icon={faUniversalAccess} />
             </div>
             <a href="">Accessibility</a>
           </div>
           <div className="nav__link">
             <div className="nav__link--logo">
-              <i className="fa-solid fa-language"></i>
+              <FontAwesomeIcon icon={faLanguage} />
             </div>
             <a href="">Language</a>
           </div>
           <div className="nav__link">
             <div className="nav__link--logo">
-              <i className="fa-solid fa-gear"></i>
+              <FontAwesomeIcon icon={faGear} />
             </div>
             <a href="">Settings</a>
           </div>
@@ -68,7 +69,7 @@ function Nav() {
           </div>
         </div>
         <div className="logout">
-          <i className="fas fa-right-from-bracket"></i>
+          <FontAwesomeIcon icon="right-from-bracket" />
           Logout
         </div>
       </nav>

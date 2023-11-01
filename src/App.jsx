@@ -4,6 +4,7 @@ import NAV from './components/nav.jsx';
 import Dashboard from './components/dashboard.jsx';
 import Home from './components/home.jsx';
 import './App.css';
+import Chatbox from './components/chatbox.jsx';
 
 function App() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -27,22 +28,8 @@ function App() {
        <section>
         <Dashboard />
         <Home />
-
-        <p>Enter your query below:</p>
-        <div>
-          <input
-            type="text"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            />
-          <button onClick={handleSearch}>Search</button>
-        </div>
-        <div>
-          {searchResults.map((result, index) => (
-            <div key={index}>{result}</div>
-            ))}
-        </div>
-            </section>
+            <Chatbox />
+      </section>
     </div>
   );
 }
